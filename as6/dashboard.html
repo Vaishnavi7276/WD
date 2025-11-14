@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>Admin Dashboard</h2>
+    <button id="logoutBtn">Logout</button>
+  </header>
+
+  <main>
+    <section class="event-section">
+      <h3>Event Records</h3>
+      <button id="addEventBtn" class="addBtn">Add New Event</button>
+      <table id="eventTable">
+        <thead>
+          <tr>
+            <th>Event Name</th>
+            <th>Date</th>
+            <th>Location</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Annual Tech Fest</td>
+            <td>2025-12-20</td>
+            <td>Nashik</td>
+            <td>
+              <button class="updateBtn">Update</button>
+              <button class="deleteBtn">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Cultural Meet</td>
+            <td>2025-11-30</td>
+            <td>Mumbai</td>
+            <td>
+              <button class="updateBtn">Update</button>
+              <button class="deleteBtn">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Update Modal -->
+  <div id="updateModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Update Event</h3>
+      <label for="eventName">Event Name</label>
+      <input type="text" id="eventName">
+      <label for="eventDate">Date</label>
+      <input type="date" id="eventDate">
+      <label for="eventLocation">Location</label>
+      <input type="text" id="eventLocation">
+      <button id="saveUpdate">Save</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

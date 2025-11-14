@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Participant List</title>
+    <link rel="stylesheet" href="participants.css" />
+  </head>
+  <body>
+    <h2>Select an Event to View Participants</h2>
+
+    <select id="eventSelect" onchange="showParticipants()">
+      <option value="">-- Choose Event --</option>
+      <option value="surgery">Surgery Conference</option>
+      <option value="vaccination">Vaccination Drive</option>
+      <option value="training">Staff Training Program</option>
+    </select>
+
+    <table id="participantTable" style="display: none">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Mobile</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+
+    <script src="participants.js"></script>
+  </body>
+</html>

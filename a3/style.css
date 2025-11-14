@@ -1,0 +1,64 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 20px;
+  background-color: #e0f3ff; /* Light sky blue */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  width: 350px;
+  background: white;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #0072ff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 114, 255, 0.3);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #0072ff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #005fcc;
+}
+
+#msg {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+  color: red;
+}

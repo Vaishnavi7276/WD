@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <h1 class="title">Admin Dashboard</h1>
+
+    <!-- ADD BUTTON -->
+    <button class="add-btn" onclick="toggleForm()">+ Add New Event</button>
+
+    <!-- Add Event Form (hidden initially) -->
+    <div class="add-box" id="addForm">
+      <h3>Add New Event</h3>
+
+      <input type="text" id="eventName" placeholder="Event Name" />
+      <input
+        type="text"
+        id="eventDate"
+        placeholder="Event Date (ex: 05 Jan 2026)"
+      />
+      <textarea id="eventDesc" placeholder="Event Description"></textarea>
+
+      <button onclick="addEvent()">Save Event</button>
+    </div>
+
+    <!-- Event List -->
+    <div id="eventContainer"></div>
+
+    <script src="admin.js"></script>
+  </body>
+</html>

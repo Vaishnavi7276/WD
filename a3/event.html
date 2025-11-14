@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Event Registration Form</h2>
+
+    <form id="eventForm">
+      <label>Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" />
+
+      <label>Email:</label>
+      <input type="text" id="email" placeholder="Enter your email" />
+
+      <label>Mobile Number:</label>
+      <input type="text" id="mobile" placeholder="Enter mobile number" maxlength="10" oninput="this.value=this.value.replace(/[^0-9]/g,'')" />
+      <button type="button" onclick="validateForm()">Register</button>
+    </form>
+
+    <p id="msg"></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
