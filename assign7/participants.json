@@ -1,0 +1,22 @@
+{
+  "budget": [
+    {
+      "name": "Rahul Patil",
+      "email": "rahul@gmail.com",
+      "mobile": "9876543210"
+    },
+    { "name": "Sneha More", "email": "sneha@gmail.com", "mobile": "9123456780" }
+  ],
+  "savings": [
+    { "name": "Amit Desai", "email": "amit@gmail.com", "mobile": "9988776655" },
+    { "name": "Priya Kale", "email": "priya@gmail.com", "mobile": "7788996655" }
+  ],
+  "investment": [
+    {
+      "name": "Sunil Joshi",
+      "email": "sunil@gmail.com",
+      "mobile": "9090909090"
+    },
+    { "name": "Meera Shah", "email": "meera@gmail.com", "mobile": "9191919191" }
+  ]
+}
